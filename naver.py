@@ -18,5 +18,6 @@ for i in result:
   print(f'title : {title}')
   titleText = i.select_one(".title_link").text
   print(f'title text : {titleText}')
-# print(html)
+  link = i.select_one(".title_link")["href"]
+  print(link)
 
